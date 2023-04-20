@@ -1,0 +1,221 @@
+{% extends "base_page_style.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th width="70%"><img src="static/images/Profilbild.png" alt="Profilbild" width="30%"></th>
+                <th><h1 style="text-align: center; position:sticky; left: 0%; color: rgb(230, 150, 0); font-size:50px;">Martin Wimmer</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">Personal Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: left;">First Names</td>
+                <td>Martin Andreas</td>
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td>Wimmer</td>
+            </tr>
+            <tr>
+                <td>Birth</td>
+                <td>09.06.1993, Hutthurm</td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td>German</td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('PersonalInterests') }}">Personal Interests</a></td>
+                <td>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Calisthenics">Calistenics, </a>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Chess">Chess, </a>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Juggling">Juggling, </a>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Wrestling">Wrestling, </a>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Urban_Gardening">Urban Gardening, </a>
+                    <a href="{{ url_for('PersonalInterests') }}#Personal_Interests_Books">Books</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    <a href="{{ url_for('WorkExperience') }}">Work Experience</a> 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>October 2020 - Now</td>
+                <td>
+                    <b>Wissenschaftlicher Mitarbeiter / Research Fellow</b>, 
+                    <i>
+                        <a href="https://fogra.org/" target="_blank" rel="noopener noreferrer">
+                            Fogra Forschungsinstitut für Medientechnologien e.V.,
+                        </a>
+                    </i>
+                    Munich
+                </td>
+            </tr>
+            <tr>
+                <td>October 2019 - May 2020</td>
+                <td>
+                    <b>
+                        Working on Publication of 
+                        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prop.202000032" target="_blank" rel="noopener noreferrer">
+                            Predicting the Orbifold Origin of the MSSM,
+                        </a>
+                    </b>
+                    <i>Technical University of Munich,</i>
+                    Munich
+                </td>
+            </tr>
+            <tr>
+                <td>May 2019 - July 2019</td>
+                <td>
+                    <b>Working Student</b>,
+                    <i>
+                        <a href="https://users.ph.tum.de/ga57raj/index.html" target="_blank" rel="noopener noreferrer">
+                            Dr. Patrick Vaudrevange
+                        </a>
+                        (Technical University of Munich),
+                    </i>
+                    Munich
+                    <br />
+                    <small>Organisation of Lecture:</small> 
+                    <a href="https://www.ph.tum.de/academics/org/cc/mh/PH2282/2019s/" target="_blank" rel="noopener noreferrer">
+                        <small>Statistical and Machine Learning Methods in Particle and Astrophysics</small>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230, 150, 0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    <a href="{{ url_for('Education') }}">Education</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>October 2016 - September 2019</td>
+                <td>
+                    <b>Master of Science (Nuclear, Particle and Astrophysics)</b>,
+                    <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">
+                        <i>Technical University of Munich</i>,
+                    </a>
+                    Munich,
+                    grade: 1.1
+                </td>
+            </tr>
+            <tr>
+                <td>October 2013 - January 2016</td>
+                <td>
+                    <b>Bachelor of Science (Physics)</b>,
+                    <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">
+                        <i>Technical University of Munich</i>,
+                    </a>
+                    Munich,
+                    grade: 2.3
+                </td>
+            </tr>
+            <tr>
+                <td>2010 - 2013</td>
+                <td>
+                    <b>Fachbezogenes Abitur</b>,
+                    <a href="https://www.fos-bos-passau.de/" target="_blank" rel="noopener noreferrer">
+                       <i>staatliche Fachoberschule Passau</i>, 
+                    </a>
+                    Passau,
+                    grade: 2.5
+                </td>
+            </tr>
+            <tr>
+                <td>2006 - 2010</td>
+                <td>
+                    <b>Mittlere Reife</b>,
+                    <a href="https://www.wspassau.de/" target="_blank" rel="noopener noreferrer">
+                        <i>staatliche Wirtschaftsschule Passau</i>,
+                    </a>
+                    Passau
+                </td>
+            </tr>
+            <tr>
+                <td>1999 - 2006</td>
+                <td>
+                    <a href="http://volksschule-wegscheid.de/" target="_blank" rel="noopener noreferrer">
+                        <i>Adalbert Stifter Volksschule Wegscheid</i>,
+                    </a>
+                    Wegscheid
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230, 150, 0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    <a href="{{ url_for('PublicationsAndProjects') }}">
+                        Publications
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mai 2020</td>
+                <td>
+                    <b><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prop.202000032" target="_blank" rel="noopener noreferrer">
+                        Predicting the Orbifold Origin of the MSSM
+                    </a></b>,
+                    <br />
+                    <i>Erik Parr, Patrick K.S. Vaudrevange, Martin Wimmer</i>,
+                    <br />
+                    <a href="https://onlinelibrary.wiley.com/journal/15213978" target="_blank" rel="noopener noreferrer">
+                        Published in: Fortschritte der Physik / Progress of Physics
+                    </a> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+{% endblock %}

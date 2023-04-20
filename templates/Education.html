@@ -1,0 +1,155 @@
+{% extends "base_page_style.html" %}
+
+{% block EducationActive %}
+active
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h1>Education</h1>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Master of Science
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>University</td>
+                <td>
+                    <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">Technical University of Munich</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td>Nuclear, Particle and Astrophysics</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>October 2016 - September 2019</td>
+            </tr>
+            <tr>
+                <td>Master's Thesis</td>
+                <td>
+                    <a href="{{ url_for('PublicationsAndProjects') }}#Master's Thesis">
+                        Machine Learning in the Heterotic Landscape
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Main Subjects</td>
+                <td>
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/CH3034/?language=en" target="_blank" rel="noopener noreferrer">
+                        Quantum Mechanical Basics of NMR-Spectroscopy,
+                    </a></i>ECTS-Credits: 4, grade: 1.0 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2165/" target="_blank" rel="noopener noreferrer">
+                        Quantum Mechanics of Molecular Systems
+                    </a></i>, ECTS: 5, grade: 1.7 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2040/" target="_blank" rel="noopener noreferrer">
+                        Relativity, Particles, and Fields,
+                    </a></i>ECTS-Credits: 10, grade: 1.0 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2113/" target="_blank" rel="noopener noreferrer">
+                        Quantum Field Theory in a Nutshell,
+                    </a></i>ECTS-Credits: 10, grade: 2.0 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2185/" target="_blank" rel="noopener noreferrer">
+                        Advanced Quantum Field Theory,
+                    </a></i>ECTS-Credits: 10, grade: 1.0 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2254/" target="_blank" rel="noopener noreferrer">
+                        QCD in Accelerator Experiments,
+                    </a></i>ECTS-Credits: 5, grade: 1.3 <br />
+                    <i><a href="https://users.ph.tum.de/ga57raj/teaching/teaching.html" target="_blank" rel="noopener noreferrer">
+                        Supersymmetry and Extra Dimensions,
+                    </a></i>ECTS-Credits:10, grade: 1.3 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH1005/" target="_blank" rel="noopener noreferrer">
+                        Theoretical Particle Physics,
+                    </a></i>ECTS-Credits: 10, grade: 2.3 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2260/" target="_blank" rel="noopener noreferrer">
+                        Advanced Statistical Physics,
+                    </a></i>ECTS-Credits: 10, grade: 1.0 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2043/" target="_blank" rel="noopener noreferrer">
+                        General Relativity and Cosmology,
+                    </a></i>ECTS-Credits: 10, grade: 2.3 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/MW0850/?language=en" target="_blank" rel="noopener noreferrer">
+                        Non-linear Continuum Mechanics,
+                    </a></i>ECTS-Credits: 5, grade: 1.3 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2136/" target="_blank" rel="noopener noreferrer">
+                        Theory and Applications of Simple Lie-Algebras,
+                    </a></i>ETCS-Credits: 5, grade: 1.3 <br />
+                    <i><a href="https://www.ph.tum.de/academics/org/cc/mh/PH2116/" target="_blank" rel="noopener noreferrer">
+                        Group Theory in Physics,
+                    </a></i>ECTS-Credits: 5, grade: 2.0 <br />
+                </td>
+            </tr>
+            <tr>
+                <td>Overall Grade</td>
+                <td>Passed with high distinction, Average grade: 1.1</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Bachelor of Science
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>University</td>
+                <td>
+                    <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">Technical University of Munich</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>October 2013 - January 2016</td>
+            </tr>
+            <tr>
+                <td>Bachelor's Thesis</td>
+                <td>
+                    <a href="{{ url_for('PublicationsAndProjects') }}#Bachelors's Thesis">
+                        Continuous Spin and the Poincare Group
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Main Subjects</td>
+                <td>
+                    <i>Mechanics</i> <br />
+                    <i>Electrodynamics</i> <br />
+                    <i>Quantum Mechanics 1 & 2</i> <br/>
+                    <i>Statistical Mechanics and Thermodynamics</i> <br />
+                    <i>Introduction to Condensed Matter Physics</i> <br />
+                    <i>Nuclear, Particle and Astrophysics 1 & 2</i> <br />
+                    <i>Chemistry for Physicists</i> <br />
+                    <i>Introduction to Scientific Programming</i> <br />
+                    <i>Special Functions in Theoretical Physics</i> <br />
+                </td>
+            </tr>
+            <tr>
+                <td>Overall Grade</td>
+                <td>Passed with merit, Average grade: 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

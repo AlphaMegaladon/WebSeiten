@@ -1,0 +1,465 @@
+{% extends "base_page_style.html" %}
+
+{% block PersonalInterestsActive %}
+active
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h1>Personal Interests</h1>
+    <table class="table table-borderless" id="Personal_Interests_Calisthenics">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Calisthenics
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Since</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Activity Status</td>
+                <td>Very active (3 to 5 training sessions a week)</td>
+            </tr>
+            <tr>
+                <td>Some Skills</td>
+                <td>
+                    Handstand <br />
+                    Press to handstand with straight arms <br />
+                    Muscle up (7 reps on bar or rings) <br />
+                    <!-- Back lever (~5 seconds hold) <br /> -->
+                    <!-- Front lever (only very short hold) <br /> -->
+                    Frog tuck planch <br />
+                    <!-- Human flag (short hold ~2 seconds) <br /> -->
+                </td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-borderless" id="Personal_Interests_Chess">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Chess
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Since</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>Activity Status</td>
+                <td>Slightly active</td>
+            </tr>
+            <tr>
+                <td>Clubs</td>
+                <td>
+                    <a href="https://www.schachclub-garching.de/" target="_blank" rel="noopener noreferrer">
+                        Schachclub Garching 1980 e.V.
+                    </a><br />
+                    <a href="https://schach-schaibing.jimdofree.com/" target="_blank" rel="noopener noreferrer">
+                        DJK-SV Schaibing
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Elo / DWZ</td>
+                <td>
+                    <a href="https://ratings.fide.com/profile/24683680" target="_blank" rel="noopener noreferrer">
+                        2026
+                    </a> / 
+                    <a href="https://www.schachbund.de/spieler/10243390.html" target="_blank" rel="noopener noreferrer">
+                        2052  
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tournaments (Selection)</td>
+                <td>
+                    <b>3<sup>rd</sup> place:</b> 9. Salzkammergut Schachopen 2015 (A-Turnier) <br />
+                    <!--<b>6<sup>th</sup> place:</b> Bayerische Meisterschaft U18 2011 <br />-->
+                    <b>2<sup>nd</sup> place:</b> Ndb. Jugendmeisterschaft U18 - 2011 <br />
+                    <b>1<sup>st</sup> place:</b> Ndb. Jugendmeisterschaft U18 - 2010 <br />
+                    <!--<b>2<sup>nd</sup> place:</b> 8. Ergoldinger Jugend-Open U18 - 2010 <br />-->
+                    <!--<b>4<sup>th</sup> place:</b> Ndb. Jugendblitzmeisterschaft U20 - 2010 <br />-->
+                    <b>1<sup>st</sup> place:</b> Tögingen Jugend-Open U18 - 2009 <br />
+                    <!--<b>2<sup>nd</sup> place:</b> Schellschach Turnier Aham U16 - 2009 <br />-->
+                    <!--<b>3<sup>rd</sup> place:</b> Ndb. Jugendmeisterschaft U16 - 2008 <br />-->
+                    <b>1<sup>st</sup> place:</b> Ndb. Jugendblitzmeisterschaft U14 - 2006 <br />
+                    <!--<b>3<sup>rd</sup> place:</b> Ndb. Jugendmeisterschaft U12 - 2005 <br />-->
+                    <b>1<sup>st</sup> place:</b> Ndb. Jugendblitzmeisterschaft U12 - 2005 <br />
+                    <b>2<sup>nd</sup> place:</b> Deutsche Schulschachmeisterschaft (Mannschaft, Grundschule) - 2004 <br />
+                    <b>1<sup>st</sup> place:</b> Bayerische Schulschachmeisterschaft (Mannschaft, Grundschule) - 2004 <br />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container" style="width: 70%;margin-left: 0%;">
+        <canvas id="myChart" width="200" height="70"></canvas>
+    </div>
+    <br />
+
+    <table class="table table-borderless" id="Personal_Interests_Juggling">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Juggling
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Since</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>Activity Status</td>
+                <td>Only rare / just for fun</td>
+            </tr>
+            <tr>
+                <td>Video Link</td>
+                <td>Under progress</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-borderless" id="Personal_Interests_Wrestling">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Wrestling
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Since</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <td>Activity Status</td>
+                <td>Rare active</td>
+            </tr>
+            <tr>
+                <td>Club</td>
+                <td>
+                    <a href="https://www.esv-muenchen-ost.de/esv/index.php?id=5" target="_blank" rel="noopener noreferrer">
+                        ESV München-Ost e.V.
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Former Club</td>
+                <td>
+                    <a href="https://www.sv-untergriesbach.de/" target="_blank" rel="noopener noreferrer">
+                        SV Weiß-Blau Untergriesbach
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tournaments (Selection)</td>
+                <td>
+                    <!--<b>6<sup>th</sup> place:</b> Bayerische Meisterschaft Männer - gr.-röm. Stil 2013 <br />-->
+                    <b>2<sup>nd</sup> place:</b> Bayerische Meisterschaft Junioren - gr.-röm. Stil 2013 <br />
+                    <b>1<sup>st</sup> place:</b> Bärencup Bindlach Junioren - gr.-röm. Stil 2012 <br />
+                    <b>5<sup>th</sup> place:</b> Deutsche Meisterschaft Junioren - gr.-röm. Stil 2012 <br />
+                    <b>2<sup>nd</sup> place:</b> Bayerische  Meisterschaft Junioren - gr.-röm. Stil 2012 <br />
+                    <!--<b>2<sup>nd</sup> place:</b> Bezirksmeisterschaft Niederbayern / Oberpfalz Männer - gr.-röm. Stil 2012 <br />-->
+                    <!--<b>4<sup>th</sup> place:</b> Bayerische Meisterschaft Männer - gr.-röm. Stil 2011 <br/>-->
+                    <b>2<sup>nd</sup> place:</b> Bezirksmeisterschaft Niederbayern / Oberpfalz Männer - gr.-röm. Stil 2011 <br />
+                    <!--<b>2<sup>nd</sup> place:</b> Bärencup Bindlach Kadetten - gr.-röm. Stil 2010 <br />-->
+                    <b>1<sup>st</sup> place:</b> Bezirksmeisterschaft Niederbayern / Oberpfalz A/B-Jugend - gr.-röm. Stil 2010 <br />
+                    <!--<b>3<sup>rd</sup> place:</b> Bezirksmeisterschaft Niederbayern / Oberpfalz A/B-Jugend - gr.-röm. Stil 2009 <br />-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-borderless" id="Personal_Interests_Urban_Gardening">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Urban Gardening
+                </th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
+          <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" class="active" aria-current="true" aria-label="Slide 7"></button>-->
+        </div>
+        <div class="carousel-inner">
+            <!--<div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/Maerz_2021_800_450.jpg" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>March 2021</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/April_2021_800_450.jpg" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>April 2021</h5>
+                </div>
+            </div>-->
+            <div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/Mai_2021_800_450.jpg" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mai 2021</h5>
+                  <!--<p>Some representative placeholder content for the second slide.</p>-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/Juni_2021_Balkon.JPG" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>June 2021</h5>
+                <!--<p>Some representative placeholder content for the first slide.</p>-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/November_2021_800_450.jpg" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>November 2021</h5>
+                <!--<p>Some representative placeholder content for the second slide.</p>-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/Urban_Gardening/Dezember_2021_800_450.png" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Dezember 2021</h5>
+                <!--<p>Some representative placeholder content for the second slide.</p>-->
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="../static/images/Urban_Gardening/Maerz_2022_Balkon_800_450.jpg" class="d-block w-80" alt="..." style="margin:auto;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>March 2022</h5>
+                <!--<p>Some representative placeholder content for the second slide.</p>-->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <table class="table table-borderless" id="Personal_Interests_Books">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Books
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Last 10 Consumed Books:</td>
+                <td>
+                    <a href="https://www.amazon.de/exec/obidos/ASIN/3424200670/verlagsgruppe-21/" target="_blank" rel="noopener noreferrer">
+                        <b>Selfmade</b>,
+                        <i>by Carsten Maschmeyer</i>
+                    </a>
+                    <br />
+                    <a href="https://shop.thorsten-havener.com/products/die-kunst-der-manipulation" target="_blank" rel="noopener noreferrer">
+                        <b>Mach doch, was ich will</b>,
+                        <i>by Thorsten Havener</i>
+                    </a>
+                    <br />
+                    <a href="https://www.packtpub.com/product/learn-quantum-computing-with-python-and-ibm-quantum-experience/9781838981006" target="_blank" 
+                    rel="noopener noreferrer">
+                        <b>Learn Quantum Computing with Python and IBM Quantum Experience</b>, 
+                        <i>by Robert Loredo</i>
+                    </a> 
+                    <br />
+                    <a href="https://www.wiley-vch.de/de/fachgebiete/computer-und-informatik/kryptografie-fuer-dummies-978-3-527-71457-5" target="_blank" 
+                    rel="noopener noreferrer">
+                        <b>Kryptografie für Dummies</b>, 
+                        <i>by Hans Werner Lang</i>
+                    </a>
+                    <br />
+                    <a href="https://www.amazon.de/-/en/Leo-Angart/dp/3776628227/ref=sr_1_1?crid=1357HY2YNQKC3&keywords=vergiss+deine+brille&qid=1651837589&s=digital-text&sprefix=vergiss+deine+brille%2Cdigital-text%2C77&sr=1-1-catcorr" target="_blank" rel="noopener noreferrer">
+                        <b>Vergiss deine Brille: mit effizienten und gezielten Übungen zurück zur natürlichen Sehkraft</b>,
+                        <i>by Leo Angart</i>
+                    </a>
+                    <br />
+                    <a href="https://jamesclear.com/" target="_blank" 
+                    rel="noopener noreferrer">
+                        <b>Die 1%-Methode - Minimale Veränderung, maximale Wirkung</b>, 
+                        <i>by James Clear</i>
+                    </a> 
+                    <br />
+                    <a href="https://shop.thorsten-havener.com/products/korpersprache-verstehen-menschen-lesen" target="_blank" rel="noopener noreferrer">
+                        <b>Ich sehe das, was du nicht sagst</b>,
+                        <i>by Thorsten Havener</i>
+                    </a>
+                    <br />
+                    <a href="https://www.amazon.de/Selbstversorger-Balkon-Das-Monat-f%C3%BCr-Monat-Konzept-Michael-Breckwoldt/dp/3835416286/ref=asc_df_3835416286/?tag=googshopde-21&linkCode=df0&hvadid=310661448858&hvpos=&hvnetw=g&hvrand=11253421936849047187&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1004133&hvtargid=pla-564449340648&psc=1&th=1&psc=1&tag=&ref=&adgrpid=63480430762&hvpone=&hvptwo=&hvadid=310661448858&hvpos=&hvnetw=g&hvrand=11253421936849047187&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1004133&hvtargid=pla-564449340648" target="_blank" rel="noopener noreferrer">
+                        <b>Selbstversorger-Balkon: Das Monat-für-Monat-Konzept</b>,
+                        <i>by Michael Breckwoldt</i>
+                    </a>
+                    <br />
+                    <a href="https://stevenlow.org/overcoming-gravity/" target="_blank" 
+                    rel="noopener noreferrer">
+                        <b>Overcoming Gravity - A Systematic Approach to Gymnastics and Bodyweight Strength</b>, 
+                        <i>by Steven Low</i>
+                    </a> 
+                    <br />
+                    <a href="https://www.amazon.de/dp/1491991739/ref=nosim?linkCode=gg2&tag=thirdwish-20" target="_blank" rel="noopener noreferrer">
+                        <b>Flask Web Development: Developing Web Applications with Python</b>,
+                        <i>by Miguel Grinberg</i>
+                    </a>
+                    <br />
+                    <!-- Just list the last 10 read books
+                    <a href="https://www.thalia.de/shop/home/artikeldetails/A1060598195" target="_blank" rel="noopener noreferrer">
+                        <b>Ich sehe wer du bist</b>,
+                        <i>by Dannero</i>
+                    </a>
+                    <br />
+                    <a href="https://www.amazon.de/Think-Grow-Rich-unver%C3%A4nderte-Originalausgabe/dp/3959721714" target="_blank" rel="noopener noreferrer">
+                        <b>Think and Grow Rich</b>,
+                        <i>Napoleon Hill</i>
+                    </a>
+                    <br />
+                    <a href="https://www.amazon.de/-/en/Klaus-Mainzer/dp/3662619970/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" rel="noopener noreferrer">
+                        <b>Quantencomputer: Von der Quantenwelt zur Künstlichen Intelligenz</b>,
+                        <i>by Klaus Mainzer</i>
+                    </a>
+                    <br />
+                    <a href="https://www.wimhofmethod.com/the-wim-hof-method-book" target="_blank" rel="noopener noreferrer">
+                        <b>Die Wim Hof Methode</b>,
+                        <i>by Wim Hof</i>
+                    </a>
+                    <br />
+                    <a href="https://www.wimhofmethod.com/products/books/koud-kunstje" target="_blank" rel="noopener noreferrer">
+                        <b>Nie wieder krank: Gesund, stark und leistungsfähig durch die Kraft der Kälte</b>,
+                        <i>by Wim Hof and Koen de Jong</i>
+                    </a>
+                    <br />
+                    <a href="https://shop.thorsten-havener.com/products/sag-es-keinem-weiter-warum-wir-geheimnisse-brauchen" target="_blank" rel="noopener noreferrer">
+                        <b>Sag es keinem weiter</b>,
+                        <i>by Thorsten Havener</i> 
+                    </a>
+                    <br />
+                    <a href="https://shop.thorsten-havener.com/products/denk-doch-was-du-willst-die-freiheit-der-gedanken" target="_bank" rel="noopener noreferrer">
+                        <b>Denk doch, was du willst</b>,
+                        <i>by Thorsten Havener</i>
+                    </a>
+                    <br />
+                    <a href="https://shop.thorsten-havener.com/products/denken-sie-nicht-an-einen-blauen-elefanten-die-macht-der-gedanken" target="_blank" rel="noopener noreferrer">
+                        <b>Denken Sie nicht an einen blauen Elefanten</b>,
+                        <i>by Thorsten Havener</i>
+                    </a>
+                    <br />
+                    <a href="https://www.timonkrause.com/bucher" target="_blank" rel="noopener noreferrer">
+                        <b>Kennen wir uns?</b>,
+                        <i>by Timon Krause</i>
+                    </a>
+                    <br />
+                    <a href="https://www.amazon.de/gp/product/3742307452/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=marklaurencom-21&creative=6742&linkCode=as2&creativeASIN=3742307452&linkId=0d2c858918611b9fae59066a59d6cfc6" target="_blank" rel="noopener noreferrer">
+                        <b>Fit ohne Geräte: Die 90-Tage-Challenge für Männer</b>,
+                        <i>by Mark Lauren</i>
+                    </a>
+                    <br />
+                    <a href="https://www.hugendubel.de/de/ebook_epub/bill_gates-wie_wir_die_klimakatastrophe_verhindern-38486719-produkt-details.html" target="_blank" rel="noopener noreferrer">
+                        <b>Wie wir die Klimakatastrophe verhindern</b>,
+                        <i>by Bill Gates</i>
+                    </a>
+                    <br />
+                    -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // for DWZ/ELO Plot
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+            datasets: [{
+                label: 'DWZ',
+                data: [1966, 1875, 2000, 1930, 1943, 2013, 2023, 1986, 2039, 2030, 2052, 2052, 2052],
+                backgroundColor: ['rgba(255, 99, 132, 1)'],
+                borderColor: ['rgba(255, 99, 132, 1)'],
+                borderWidth: 2
+            }, {
+                label: 'ELO',
+                data: [NaN, 1852, 1937, 1994, 1978, 2025, 2026, 2026, 2026, 2026, 2026, 2026, 2026],
+                backgroundColor: ['rgba(100, 100, 255, 1)'],
+                borderColor: ['rgba(100, 100, 255, 1)'],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    suggestedMin: 1800,
+                    suggestedMax: 2100
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Rating Developement',
+                    font: {
+                        size: 20
+                    }
+                }
+            },
+        }
+    });
+</script>
+
+{% endblock %}

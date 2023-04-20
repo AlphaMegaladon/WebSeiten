@@ -1,0 +1,161 @@
+{% extends "base_page_style.html" %}
+
+{% block WorkExperienceActive %}
+active 
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h1>Work Experience</h1>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    <a href="https://fogra.org/" target="_blank" rel="noopener noreferrer">
+                        Fogra Forschungsinstitut für Medientechnologien e.V. 
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Position</td>
+                <td> Wissenschaftlicher Mitarbeiter / Research Fellow</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>October 2020 - Now</td>
+            </tr>
+            <tr>
+                <td>Projects</td>
+                <td>
+                    <a href="{{ url_for('PublicationsAndProjects') }}#Publications_and_Projects_SpectraColor">
+                        SpectralColor WebApp, 
+                    </a>
+                    <br />
+                    <a href="{{ url_for('PublicationsAndProjects') }}#Publications_and_Projects_DeepQuality">
+                        DeepQuality Project, 
+                    </a>
+                    <br />
+                    <a href="{{ url_for('PublicationsAndProjects') }}#Publications_and_Projects_3DScan">
+                        3D-Scanner Color Calibration
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Talks</td>
+                <td>
+                    <b>Fogra Web Academy</b>,
+                    <i>Artificial Intelligence Based Image Preparation</i>
+                    <br />
+                    <b><a href="https://fogra.org/veranstaltungen/cafes" target="_blank" rel="noopener noreferrer">
+                        Fogra Colour Management Café 27,
+                    </a></b>
+                    <i>Künstliche Intelligenz in der Druckindustrie</i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Working on Publication of 
+                    <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prop.202000032" target="_blank" rel="noopener noreferrer">
+                        Predicting the Orbifold Origin of the MSSM
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Position</td>
+                <td>Research</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>October 2019 - Mai 2020</td>
+            </tr>
+            <tr>
+                <td>Authors</td>
+                <td>Erik Parr, Patrick K.S. Vaudrevange, Martin Wimmer</td>
+            </tr>
+            <tr>
+                <td>Published in</td>
+                <td>
+                    <a href="https://onlinelibrary.wiley.com/journal/15213978" target="_blank" rel="noopener noreferrer">
+                        Fortschritte der Physik / Progress of Physics
+                    </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>First Published</td>
+                <td>28 April 2020</td>
+            </tr>
+            <tr>
+                <td>Abstract</td>
+                <td>
+                    MSSM-like string models from the compactification of the heterotic string on toroidal orbifolds 
+                    (of the kind &Topf;<sup>6</sup>/P) have distinct phenomenological properties, 
+                    like the spectrum of vector-like exotics, the scale of supersymmetry breaking, and the existence of non-Abelian flavor symmetries. 
+                    We show that these characteristics depend crucially on the choice of the underlying orbifold point group P. 
+                    In detail, we use boosted decision trees to predict P from phenomenological properties of MSSM-like orbifold models. 
+                    As this works astonishingly well, we can utilize machine learning to predict the orbifold origin of the MSSM.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th width="20%">
+                    <svg height="10" width="200">
+                        <rect width="200" height="10" style="fill:rgb(230,150,0);" />
+                    </svg>
+                </th>
+                <th style="font-size: 25px;">
+                    Technical University of Munich via 
+                    <a href="https://users.ph.tum.de/ga57raj/index.html" target="_blank" rel="noopener noreferrer">
+                        Dr. Patrick Vaudrevange
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Position
+                </td>
+                <td>
+                    Working Student
+                </td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>Mai 2019 - Juli 2019</td>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>
+                    Organisation of Lecture: 
+                    <a href="https://www.ph.tum.de/academics/org/cc/mh/PH2282/2019s/" target="_blank" rel="noopener noreferrer">
+                       Statistical and Machine Learning Methods in Particle and Astrophysics
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
